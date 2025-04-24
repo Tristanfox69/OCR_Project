@@ -1,0 +1,8 @@
+runtime: python310  # Pastikan menggunakan Python 3.10 atau yang sesuai
+
+entrypoint: uvicorn ocr_api:app --host 0.0.0.0 --port $PORT
+
+instance_class: F2  # Opsional, untuk memilih ukuran instansi
+
+env_variables:
+  GOOGLE_APPLICATION_CREDENTIALS: "/path/to/your/service-account-file.json"  # Jika menggunakan Google Cloud Storage atau API Google lainnya
