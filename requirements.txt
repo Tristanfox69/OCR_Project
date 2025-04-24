@@ -1,6 +1,5 @@
 fastapi
 uvicorn
-pillow
 pytesseract
+Pillow
 requests
-google-cloud-storage
